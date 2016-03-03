@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {
+      "intent": "ChooseAction",
+      "slots": [
+        {
+          "name": "action",
+          "type": "LIST_OF_ACTIONS"
+        }
+      ]
+    },
+    {
+      "intent": "RestartStory"
+    },
+    {
+      "intent": "Summary"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    }
+  ]
+}

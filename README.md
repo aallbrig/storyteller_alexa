@@ -7,7 +7,7 @@ Since this is a "game" meant for younger kids with lesser than ideal attention s
 When you interact with the application, it will draw session from storage.  If it detects session data, it will ask "I see there is a story in progress.  Say 'summary' to hear the story thus far.  Would you like to continue previous story or start a new one?"  Otherwise it will say "Would you like to hear a tale of x, y or z?"
 
 ### Set up
-Go to AWS and set up a lambda, and select "Alexa" type.  After that, start a dynamoDB table and give it the name of "storyTeller" with a row of "id" "prime".  Assumption: there's ever only going to be one row data so this is okay (and lazy :] ).
+Go to AWS and set up a lambda, use node as language, and select "Alexa" event source.  After that, start a dynamoDB table and give it the name of "storyTeller" with a row of "id" "prime".  Assumption: there's ever only going to be one row data so this is okay (and lazy :] ).
 
 
 ### Wake Word
