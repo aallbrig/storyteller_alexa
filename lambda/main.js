@@ -2,6 +2,7 @@ var AWS = require("aws-sdk");
 var DOC = require("dynamodb-doc");
 var docClient = new DOC.DynamoDB();
 
+// TODO: Refactor this into a linked list.
 var story = [
   {
     "action": "",
@@ -178,6 +179,10 @@ function saveAppData(appData, callback) {
 exports.handler = function (event, context) {
   try {
     console.log("event.session.application.applicationId=" + event.session.application.applicationId);
+    console.log('event');
+    console.log(event);
+    console.log('context');
+    console.log(context);
 
     if (event.session.new) {
       onSessionStarted({requestId: event.request.requestId}, event.session);
